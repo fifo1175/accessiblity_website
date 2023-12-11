@@ -67,9 +67,9 @@ footer {
     "foot1    foot1   foot1";
 }
 
-header {grid-area: header1; background: #d23434;}
+header {grid-area: header1; background: #ef1616;}
 nav {grid-area: nav1; background: #3991b1;}
-main {grid-area: main1; background: #d23434;}
+main {grid-area: main1; background: #ef1616;}
 #aside1 {grid-area: aside1; background: #695d89;}
 #aside2 {grid-area: aside2; background: #695d89;}
 footer {grid-area: foot1; background: #3991b1;}
