@@ -23,16 +23,18 @@ h1,
 h2,
 h3 {
     padding: .2em 0;
+    color: rgb(216, 113, 16);
 }
 
 p {
     margin: 1.8em 0;
     line-height: 1.4em;
+    color: white;
 }
 
 a {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 header,
@@ -41,7 +43,7 @@ main,
 aside,
 footer {
     padding: 1em;
-    border: 2px rgb(110, 108, 108) solid;
+    border: 1px rgb(216, 113, 16) solid;
 }
 
 header,
@@ -52,7 +54,7 @@ footer {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    background: #e72121;
+    background: #332d3c;
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -67,20 +69,23 @@ footer {
     "foot1    foot1   foot1";
 }
 
-header {grid-area: header1; background: #ef1616;}
-nav {grid-area: nav1; background: #3991b1;}
-main {grid-area: main1; background: #ef1616;}
-#aside1 {grid-area: aside1; background: #695d89;}
-#aside2 {grid-area: aside2; background: #695d89;}
-footer {grid-area: foot1; background: #3991b1;}
+header {grid-area: header1; background: #332d3c;}
+nav {grid-area: nav1; background: #332d3c;}
+main {grid-area: main1; background: #332d3c;}
+#aside1 {grid-area: aside1; background: #332d3c;}
+footer {grid-area: foot1; background: #332d3c;}
 
 li {
     text-align: center;
     line-height: 50px;
     min-width: 20%;
     height: 50px;
-    border: 2px rgb(0, 0, 0) solid;
-    color: black;
+    border: 1px rgb(216, 113, 16) solid;
+    color: white;
+}
+
+footer {
+    color: white;
 }
 
 nav ul {
@@ -112,7 +117,7 @@ nav ul li {
             line-height: 50px;
             min-width: 20%;
             height: 50px;
-            border: 2px rgb(0, 0, 0) solid;
+            border: 1px rgb(216, 113, 16) solid;
         }
         
         nav ul {
@@ -146,7 +151,7 @@ nav ul li {
             min-width: 20%;
             margin: 1em;
             height: 50px;
-            border: 2px rgb(0, 0, 0) solid;
+            border: 1px rgb(216, 113, 16) solid;
         }
         
         nav ul {
