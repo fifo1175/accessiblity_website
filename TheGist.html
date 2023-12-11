@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/thegist.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <title>TheGist</title>
+</head>
+
+<body class="content">
+    <header>
+        <h1 id="main_header">TheGist</h1>
+    </header>
+
+    <nav>
+        <h2 class="sr-only">Main Navigation</h2>
+        <ul>
+            <li>
+                <a href="#Assignment">Assignment</a>
+            </li>
+            <li>
+                <a href="#Project">Project</a>
+            </li>
+            <li>
+                <a href="#Outcomes">Outcomes</a>
+            </li>
+            <li>
+                <a href="#External_Links">External Links</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="Assignment">Assignment</h2>
+        <p>
+            We has a group project assignment to create any website or application that incorporated some kind of "big data" into it.  
+            This could be data collected from various APIs, public databases, AI/ML models with lots of input, or even user submitted data, assuming it was on a big enough scale.
+        </p>
+        
+        <h2 id="Project">Project</h2>
+        <p>
+            My group decided we wanted to make a web app that users could go to and submit their email along with topics they were interested in and they would recieve
+            monthly or bi-monthly summaries of news articles about their chosen topics.  This way, they could get "the gist" of what was going on in that field
+            without having to find and read through a bunch of articles.  We thought this was a doable project that people would actually use.
+        </p>
+        <p>
+            To create the web app, we needed a front-end where users could see an "about" section descirbing what our app does, as well as forms for inputting their
+            email and preferences about topics and email frequency.  This was the simpler part of the project.
+        </p>
+        <p>
+            The back-end side was the more complicated part.  We decided to use a news API that congregated articles from most of the major news outlets like CNN, New York Times,
+            WSJ, Bloomberg, etc.  We would call that API and send a list of the articles to ChatGPT's API asking ChatGPT to summarize each article.  To do this, we used Kafka,
+            which is an event distribution platform that allows for real-time data streaming between services.  Each article would be made part of a kafka "event" and another microservice
+            would read the events as they came in and send the URLs to ChatGPT's API to summarize them and then store in a database for when we sent out the emails to each user.
+        </p>
+        <p>
+            Here is a rough diagram of the application architecture: 
+        </p>
+        <figure>
+            <img src="Resources/thegist.jpg" alt="Architecture diagram of the gist application" id="gistIMG">
+            <figcaption>TheGist Architecture Diagram</figcaption>
+        </figure>
+
+        <h2 id="Outcomes">Outcomes</h2>
+        <p>
+            By the end of the semester, we were able to build the app, but we didn't get to deploy it which was our final goal.  We did a presentation
+            and demo of it for the class and ran it on localhost, which worked but wasn't ideal.  If we were able to deploy it and scale it for lots of users
+            that would've been amazing, but I'm still proud of the project and the work that the group and I did.  
+        </p>
+
+        <h2 id="External_Links">External Links</h2>
+        <a href="https://github.com/callingmedic911/thegist/tree/main">TheGist Github Repo</a>
+    </main>
+</body>
+        
+</html>

@@ -1,5 +1,5 @@
 body {
-    background:#e72121;
+    background:#d23434;
 }
 
 p {
@@ -67,12 +67,12 @@ footer {
     "foot1    foot1   foot1";
 }
 
-header {grid-area: header1; background: #e72121;}
-nav {grid-area: nav1; background: #369cc1;}
-main {grid-area: main1; background: #e72121;}
+header {grid-area: header1; background: #d23434;}
+nav {grid-area: nav1; background: #3991b1;}
+main {grid-area: main1; background: #d23434;}
 #aside1 {grid-area: aside1; background: #695d89;}
 #aside2 {grid-area: aside2; background: #695d89;}
-footer {grid-area: foot1; background: #369cc1;}
+footer {grid-area: foot1; background: #3991b1;}
 
 li {
     text-align: center;
@@ -80,6 +80,7 @@ li {
     min-width: 20%;
     height: 50px;
     border: 2px rgb(0, 0, 0) solid;
+    color: black;
 }
 
 nav ul {

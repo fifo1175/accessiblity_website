@@ -1,0 +1,118 @@
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#main_header {
+    text-align: center;
+
+}
+
+.content {
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #332d3c;
+    color: white;
+}
+
+#gistIMG {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Prata', serif;
+    text-align: center;
+    color: rgb(216, 113, 16);
+}
+
+a {
+    color:white;
+}
+
+li {
+    text-align: center;
+    line-height: 50px;
+    min-width: 20%;
+    height: 50px;
+    border: 1px rgb(216, 113, 16) solid;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5em;
+    font-size: large;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-bottom: 1px;
+    border-color: black;
+}
+
+th, td{
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+section {
+    display: block;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(-100%);
+}
+
+.skip-link {
+    transition: transform 0.3s;
+}
