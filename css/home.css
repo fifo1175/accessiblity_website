@@ -10,10 +10,6 @@ h1, h2, h3, ul {
     font-family: 'Prata', serif;
 }
 
-#title {
-    border: black 1px solid;
-}
-
 /* css reset */
 *,
 *:before,
@@ -32,6 +28,10 @@ h3 {
 p {
     margin: 1.8em 0;
     line-height: 1.4em;
+}
+
+a {
+    color: black;
 }
 
 header,
@@ -66,12 +66,12 @@ footer {
     "foot1    foot1   foot1";
 }
 
-header {grid-area: header1; background: #648FFF;}
-nav {grid-area: nav1; background: #DC267F;}
-main {grid-area: main1; background: #FFB000;}
-#aside1 {grid-area: aside1; background: #785EF0;}
-#aside2 {grid-area: aside2; background: #785EF0;}
-footer {grid-area: foot1; background: #648FFF;}
+header {grid-area: header1; background: #e72121;}
+nav {grid-area: nav1; background: #369cc1;}
+main {grid-area: main1; background: #e72121;}
+#aside1 {grid-area: aside1; background: #695d89;}
+#aside2 {grid-area: aside2; background: #695d89;}
+footer {grid-area: foot1; background: #369cc1;}
 
 nav ul {
     display: flex;
